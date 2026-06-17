@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist | M.I.A.</title>
+    <title data-pt="Artista | M.I.A.">Artist | M.I.A.</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,23 +17,34 @@
         </div>
 
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="artista.html">Artist</a></li>
-            <li><a href="letra.html">Lyrics</a></li>
-            <li><a href="contexto.html">Context</a></li>
+            <li><a href="index.html" data-pt="Início">Home</a></li>
+            <li><a href="artista.html" data-pt="Artista">Artist</a></li>
+            <li><a href="letra.html" data-pt="Letra">Lyrics</a></li>
+            <li><a href="contexto.html" data-pt="Contexto">Context</a></li>
         </ul>
+
+        <div class="nav-actions">
+
+            <button class="nav-btn" id="theme-toggle" aria-label="Switch to light mode">
+                <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+                <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path></svg>
+            </button>
+
+            <button class="nav-btn lang-btn" id="lang-toggle" aria-label="Mudar para português">PT</button>
+
+        </div>
 
     </nav>
 
     <div class="page-title">
 
-        <span>THE ARTIST</span>
+        <span data-pt="A ARTISTA">THE ARTIST</span>
 
         <h1>
             M.I.A.
         </h1>
 
-        <p>
+        <p data-pt="Entender a artista por trás de Borders nos ajuda a compreender a poderosa mensagem da música.">
             Understanding the artist behind Borders helps us understand
             the powerful message of the song.
         </p>
@@ -47,20 +58,20 @@
 <section class="content-section">
 
     <div class="section-title">
-        <span>BIOGRAPHY</span>
-        <h2>Who Is M.I.A.?</h2>
+        <span data-pt="BIOGRAFIA">BIOGRAPHY</span>
+        <h2 data-pt="Quem É M.I.A.?">Who Is M.I.A.?</h2>
     </div>
 
     <div class="content-card">
 
-        <p>
+        <p data-pt="M.I.A., cujo nome verdadeiro é Mathangi Arulpragasam, é uma musicista, compositora e artista visual britânica. Ela nasceu em Londres e passou parte da infância no Sri Lanka antes de retornar ao Reino Unido.">
             M.I.A., whose real name is Mathangi Arulpragasam,
             is a British musician, songwriter and visual artist.
             She was born in London and spent part of her childhood
             in Sri Lanka before returning to the United Kingdom.
         </p>
 
-        <p>
+        <p data-pt="Sua formação multicultural influenciou fortemente sua música, que frequentemente combina diferentes estilos musicais com temas sociais e políticos.">
             Her multicultural background strongly influenced her music,
             which often combines different musical styles with social
             and political themes.
@@ -73,19 +84,19 @@
 <section class="content-section">
 
     <div class="section-title">
-        <span>PERSONAL HISTORY</span>
-        <h2>Connection With Migration</h2>
+        <span data-pt="HISTÓRIA PESSOAL">PERSONAL HISTORY</span>
+        <h2 data-pt="Conexão Com A Migração">Connection With Migration</h2>
     </div>
 
     <div class="content-card">
 
-        <p>
+        <p data-pt="A família de M.I.A. viveu o deslocamento forçado por causa do conflito no Sri Lanka. Por isso, temas como migração, identidade e pertencimento se tornaram partes importantes de seu trabalho.">
             M.I.A.'s family experienced displacement due to conflict in
             Sri Lanka. Because of this, themes such as migration,
             identity and belonging became important parts of her work.
         </p>
 
-        <p>
+        <p data-pt="Suas experiências pessoais lhe deram uma perspectiva única sobre os desafios enfrentados por imigrantes e refugiados em todo o mundo.">
             Her personal experiences gave her a unique perspective on
             the challenges faced by immigrants and refugees around
             the world.
@@ -98,19 +109,19 @@
 <section class="content-section">
 
     <div class="section-title">
-        <span>ARTISTIC STYLE</span>
-        <h2>Music With A Message</h2>
+        <span data-pt="ESTILO ARTÍSTICO">ARTISTIC STYLE</span>
+        <h2 data-pt="Música Com Uma Mensagem">Music With A Message</h2>
     </div>
 
     <div class="content-card">
 
-        <p>
+        <p data-pt="Diferente de muitos artistas mainstream, M.I.A. frequentemente usa sua música para discutir questões globais como guerra, pobreza, desigualdade, migração e direitos humanos.">
             Unlike many mainstream artists, M.I.A. frequently uses her
             music to discuss global issues such as war, poverty,
             inequality, migration and human rights.
         </p>
 
-        <p>
+        <p data-pt="Suas músicas incentivam os ouvintes a pensar criticamente sobre a sociedade e questionar estruturas de poder.">
             Her songs encourage listeners to think critically about
             society and question structures of power.
         </p>
@@ -123,12 +134,12 @@
 
     <div class="section-title">
         <span>BORDERS</span>
-        <h2>Why She Wrote The Song</h2>
+        <h2 data-pt="Por Que Ela Escreveu A Música">Why She Wrote The Song</h2>
     </div>
 
     <div class="content-card">
 
-        <p>
+        <p data-pt="Borders foi criada durante um período em que o mundo testemunhava grandes crises de refugiados. M.I.A. queria chamar atenção para as dificuldades enfrentadas por pessoas forçadas a deixar suas casas por causa de guerra, perseguição e instabilidade.">
             Borders was created during a period when the world was
             witnessing major refugee crises. M.I.A. wanted to draw
             attention to the difficulties faced by people who are
@@ -136,7 +147,7 @@
             persecution and instability.
         </p>
 
-        <p>
+        <p data-pt="Por meio da música e do videoclipe, ela desafia o público a refletir sobre políticas de migração e o impacto humano das fronteiras.">
             Through the song and its music video, she challenges
             audiences to reflect on migration policies and the human
             impact of borders.
@@ -150,7 +161,7 @@
 
     <div class="quote-box">
 
-        <h2>
+        <h2 data-pt="A arte pode iniciar conversas que a política costuma evitar.">
             Art can start conversations that politics often avoids.
         </h2>
 
@@ -165,6 +176,8 @@
     BORDERS
 </a>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
