@@ -50,6 +50,65 @@
         applyLanguage(current === 'pt' ? 'en' : 'pt');
     }
 
+    function initHeroCarousel(){
+        const slides = document.querySelectorAll('.hero-slide');
+
+        if(!slides.length){
+            return;
+        }
+
+        const dots = document.querySelectorAll('.hero-dot');
+        const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let current = 0;
+        let interval = null;
+
+        function showSlide(index){
+            slides.forEach(function(slide){
+                slide.classList.remove('is-active');
+            });
+
+            dots.forEach(function(dot){
+                dot.classList.remove('is-active');
+            });
+
+            slides[index].classList.add('is-active');
+
+            if(dots[index]){
+                dots[index].classList.add('is-active');
+            }
+
+            current = index;
+        }
+
+        function nextSlide(){
+            showSlide((current + 1) % slides.length);
+        }
+
+        function startAutoplay(){
+            if(prefersReducedMotion){
+                return;
+            }
+            interval = setInterval(nextSlide, 6000);
+        }
+
+        function resetAutoplay(){
+            if(interval){
+                clearInterval(interval);
+            }
+            startAutoplay();
+        }
+
+        dots.forEach(function(dot, index){
+            dot.addEventListener('click', function(){
+                showSlide(index);
+                resetAutoplay();
+            });
+        });
+
+        showSlide(0);
+        startAutoplay();
+    }
+
     function initReveal(){
         const itemSelectors = '.intro-grid > .card, .page-grid > .page-card, .analysis-grid > .analysis-box, .stats-section > .stat-box';
         const blockSelectors = '.content-card, .quote-box, .conclusion-card, .highlight-image, .highlight-text, .section-title';
@@ -87,6 +146,7 @@
 
     initTheme();
     initLanguage();
+    initHeroCarousel();
     initReveal();
 
 })();
