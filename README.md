@@ -55,5 +55,5 @@ Durante o desenvolvimento deste projeto foi possível aprender:
 
 ## Autor
 
-- [Gustavo Oliveira Almeida](https://github.com/Gustavo-0093)
 - [Guilherme Miranda Murillo](https://github.com/guilherm-xd)
+- [Gustavo Oliveira Almeida](https://github.com/Gustavo-0093)
