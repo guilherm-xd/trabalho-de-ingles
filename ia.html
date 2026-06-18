@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-pt="IA & Pesquisa | Borders">AI & Research | Borders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header
+    class="page-hero"
+    style="
+        background:
+        linear-gradient(rgba(7,17,31,.78),rgba(7,17,31,.92)),
+        url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=1600&q=80');
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+    "
+>
+    <nav class="navbar">
+        <div class="logo">BORDERS</div>
+        <ul class="menu">
+            <li><a href="index.html" data-pt="Início">Home</a></li>
+            <li><a href="artista.html" data-pt="Artista">Artist</a></li>
+            <li><a href="letra.html" data-pt="Letra">Lyrics</a></li>
+            <li><a href="contexto.html" data-pt="Contexto">Context</a></li>
+            <li><a href="noticias.html" data-pt="Notícias">News</a></li>
+            <li><a href="ia.html">AI</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="nav-btn" id="theme-toggle" aria-label="Switch to light mode">
+                <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+                <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path></svg>
+            </button>
+            <button class="nav-btn lang-btn" id="lang-toggle" aria-label="Mudar para português">PT</button>
+        </div>
+    </nav>
+
+    <div class="page-title">
+        <span data-pt="PROCESSO DE PESQUISA">RESEARCH PROCESS</span>
+        <h1 data-pt="Como Usamos IA">How We Used AI</h1>
+        <p data-pt="Uma reflexão crítica e sincera sobre o papel da Inteligência Artificial na nossa pesquisa, mostrando o que deu certo, o que deu errado e o que aprendemos.">
+            A critical and honest reflection on the role of Artificial Intelligence
+            in our research process - what worked, what failed and what we learned.
+        </p>
+    </div>
+</header>
+
+<main>
+
+<section class="content-section">
+    <div class="section-title">
+        <span data-pt="VISÃO GERAL">OVERVIEW</span>
+        <h2 data-pt="Nossa Jornada Com a IA">Our Journey With AI</h2>
+    </div>
+    <div class="content-card">
+        <p data-pt="Para construir este projeto, usamos ferramentas de Inteligência Artificial, principalmente o Claude, como apoio na pesquisa e na produção de conteúdo. Três dos sete integrantes do grupo trabalham com desenvolvimento de sistemas, e isso ajudou a usar a IA de forma mais completa, da criação do site à checagem dos dados e à organização do conteúdo.">
+            To build this project, we used Artificial Intelligence tools -
+            especially Claude (by Anthropic) - as a research and content production assistant.
+            Three of our group's seven members work with systems development,
+            which allowed us to use AI in a more in-depth way: from building the website
+            to verifying data and organizing content.
+        </p>
+        <p data-pt="Esta página responde às cinco perguntas sobre o uso de IA, com exemplos reais dos prompts que usamos e uma análise crítica do que funcionou e do que não deu certo.">
+            This page answers the five guiding questions about AI use, with real examples
+            of the prompts we used and a critical analysis of what worked - and what did not.
+        </p>
+    </div>
+</section>
+
+<section class="ia-section">
+    <div class="section-title">
+        <span data-pt="COMO USAMOS">HOW WE USED IT</span>
+        <h2 data-pt="Etapas do Processo">Process Steps</h2>
+    </div>
+
+    <div class="process-timeline">
+
+        <div class="timeline-step">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-content">
+                <h4 data-pt="Pesquisa inicial sobre M.I.A. e a música">Initial research on M.I.A. and the song</h4>
+                <p data-pt="Usamos a IA para obter um panorama inicial sobre a artista, sua história de vida e o contexto de criação da música Borders. Depois verificamos as informações mais importantes em fontes externas como Wikipedia, sites de notícias e entrevistas publicadas.">
+                    We used AI to get an initial overview of the artist, her life story and
+                    the context behind creating Borders. We then verified the most important
+                    information in external sources such as Wikipedia, news sites and published interviews.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-content">
+                <h4 data-pt="Análise temática da letra">Thematic analysis of the lyrics</h4>
+                <p data-pt="Pedimos para a IA ajudar a identificar e explicar os principais temas da música, como liberdade de movimento, identidade, privilégio e direitos humanos. Depois comparamos a análise com fontes acadêmicas e textos de crítica musical para checar a precisão.">
+                    We asked AI to help identify and explain the main themes in the song -
+                    freedom of movement, identity, privilege, human rights. We compared the
+                    generated analysis with academic sources and music criticism articles
+                    to verify accuracy.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-content">
+                <h4 data-pt="Pesquisa de dados sobre refugiados">Research on refugee data</h4>
+                <p data-pt="Para as páginas de Contexto e Notícias, pedimos que a IA indicasse as principais fontes de dados sobre migração e deslocamento forçado. Depois fomos direto ao site do ACNUR, da OIM e de outras fontes para confirmar os números e corrigir alguns dados que a IA trouxe errados.">
+                    For the Context and News pages, we asked AI to point to the main data sources
+                    on migration and forced displacement. We then went directly to the UNHCR, IOM
+                    and other websites to confirm the numbers - and corrected some that AI had
+                    reported incorrectly.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-content">
+                <h4 data-pt="Construção do site">Website construction</h4>
+                <p data-pt="Usamos a IA para ajudar a estruturar e escrever o código HTML e CSS do site, garantindo consistência visual e técnica entre todas as páginas. O design final passou por revisão e ajustes manuais da equipe.">
+                    We used AI to help structure and write the HTML and CSS code for the website,
+                    ensuring visual and technical consistency across all pages.
+                    The final design went through manual review and adjustments by the team.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-step">
+            <div class="timeline-dot">5</div>
+            <div class="timeline-content">
+                <h4 data-pt="Tradução e bilinguismo">Translation and bilingualism</h4>
+                <p data-pt="Para criar a funcionalidade de alternância entre inglês e português, usamos a IA para traduzir o conteúdo e sugerir a estrutura técnica do sistema de tradução no JavaScript. Revisamos todas as traduções manualmente para garantir naturalidade e precisão.">
+                    To create the English-Portuguese toggle feature, we used AI to translate
+                    the content and suggest the technical structure of the translation system
+                    in JavaScript. We manually reviewed all translations to ensure naturalness and accuracy.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="ia-section">
+    <div class="section-title">
+        <span data-pt="EXEMPLOS REAIS">REAL EXAMPLES</span>
+        <h2 data-pt="Prompts Que Usamos">Prompts We Used</h2>
+    </div>
+
+    <div class="prompt-section">
+
+        <div class="prompt-box">
+            <span class="prompt-label">PROMPT 1</span>
+            <div class="prompt-text" data-pt='"Explique a música Borders da M.I.A.: qual é a mensagem principal, quais temas ela aborda e por que foi lançada em 2015? Me dê um contexto histórico."'>
+                "Explain M.I.A.'s song Borders: what is the main message, what themes does it address and why was it released in 2015? Give me historical context."
+            </div>
+            <div class="prompt-result" data-pt="✓ Funcionou bem, porque gerou um panorama inicial útil. Antes de usar, conferimos datas e fatos históricos em fontes externas.">
+                ✓ Worked well - generated a useful initial overview. We verified dates and historical facts in external sources before using.
+            </div>
+        </div>
+
+        <div class="prompt-box">
+            <span class="prompt-label">PROMPT 2</span>
+            <div class="prompt-text" data-pt='"Analise tema por tema a letra de Borders, de M.I.A. Quais são os principais símbolos da música? O que M.I.A. quis dizer com a repetição de 'What\'s up with that?'"'>
+                "Analyze theme by theme the lyrics of Borders by M.I.A. What are the main symbols of the song? What did M.I.A. mean by repeating 'What's up with that?'"
+            </div>
+            <div class="prompt-result" data-pt="✓ Gerou análise detalhada e coerente. Comparamos com artigos de crítica musical para validar as interpretações.">
+                ✓ Generated a detailed and coherent analysis. We compared with music criticism articles to validate the interpretations.
+            </div>
+        </div>
+
+        <div class="prompt-box">
+            <span class="prompt-label">PROMPT 3</span>
+            <div class="prompt-text" data-pt='"Quais são os dados mais recentes do ACNUR sobre o número de refugiados no mundo? Inclua dados de 2024 e 2025."'>
+                "What are the most recent UNHCR data on the number of refugees in the world? Include data from 2024 and 2025."
+            </div>
+            <div class="prompt-result" data-pt="⚠ A IA errou aqui e trouxe números desatualizados de 2023. Fomos ao site oficial do ACNUR e encontramos os dados corretos de 2025.">
+                ⚠ AI made an error here - it reported outdated 2023 numbers. We went to the official UNHCR website (unhcr.org) and found the correct 2025 data.
+            </div>
+        </div>
+
+        <div class="prompt-box">
+            <span class="prompt-label">PROMPT 4</span>
+            <div class="prompt-text" data-pt='"Crie um site completo em HTML e CSS para um projeto escolar sobre a música Borders da M.I.A., com modo escuro/claro, alternância de idioma (inglês/português) e múltiplas páginas."'>
+                "Create a complete HTML and CSS website for a school project about M.I.A.'s song Borders, with dark/light mode, language toggle (English/Portuguese) and multiple pages."
+            </div>
+            <div class="prompt-result" data-pt="✓ Funcionou muito bem para a estrutura técnica. Fizemos ajustes manuais no design, no conteúdo e na responsividade mobile.">
+                ✓ Worked very well for the technical structure. We made manual adjustments to the design, content and mobile responsiveness.
+            </div>
+        </div>
+
+        <div class="prompt-box">
+            <span class="prompt-label">PROMPT 5</span>
+            <div class="prompt-text" data-pt='"Conecte os temas da música Borders com notícias e eventos recentes de 2024 e 2025 sobre migração e refugiados."'>
+                "Connect the themes of the song Borders with recent news and events from 2024 and 2025 about migration and refugees."
+            </div>
+            <div class="prompt-result" data-pt="✓ Gerou boas conexões temáticas. Verificamos todos os fatos e dados mencionados em fontes como ACNUR, OIM e IOM antes de publicar.">
+                ✓ Generated good thematic connections. We verified all mentioned facts and data in sources such as UNHCR, IOM before publishing.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="ia-section">
+    <div class="section-title">
+        <span data-pt="REFLEXÃO CRÍTICA">CRITICAL REFLECTION</span>
+        <h2 data-pt="As Cinco Perguntas Sobre IA">The Five Questions About AI</h2>
+    </div>
+
+    <div class="ia-grid">
+
+        <div class="ia-card">
+            <div class="ia-number">1</div>
+            <div class="ia-badge badge-info" data-pt="PROMPTS">PROMPTS</div>
+            <h3 data-pt="Quais prompts/perguntas vocês usaram?">What prompts/questions did you use?</h3>
+            <p data-pt="Usamos prompts detalhados e específicos, sempre com contexto como nome da música, artista e objetivo do projeto, além de pedidos de fontes para conferência. Quanto mais claro era o prompt, melhor vinha a resposta. Aprendemos que &quot;explique Borders de M.I.A. no contexto da crise de refugiados de 2015&quot; funciona muito melhor do que só &quot;fale sobre a música Borders&quot;.">
+                We used detailed and specific prompts - always including context (song name, artist,
+                project goal) and asking for sources or pointers to verify. The more specific the
+                prompt, the better the response. We learned that "explain Borders by M.I.A. in
+                the context of the 2015 refugee crisis" produces much better results than just
+                "talk about the song Borders."
+            </p>
+        </div>
+
+        <div class="ia-card">
+            <div class="ia-number">2</div>
+            <div class="ia-badge badge-warning" data-pt="ERROS">ERRORS</div>
+            <h3 data-pt="A IA cometeu erros?">Did AI make any mistakes?</h3>
+            <p data-pt="Sim, e essa foi uma das descobertas mais importantes do processo. A IA trouxe dados desatualizados sobre o número de refugiados, usando o relatório de 2023 em vez do de 2025. Também confundiu algumas datas da biografia de M.I.A. em um prompt inicial. Isso mostrou que não dá para confiar cegamente em respostas da IA, principalmente quando envolvem números e datas.">
+                Yes - and this was one of the most important discoveries of our process.
+                The AI presented outdated data on the number of refugees (from the 2023 report,
+                not 2025). Also, in an initial prompt, it confused some dates in M.I.A.'s biography.
+                These errors reinforced the importance of never blindly trusting AI responses,
+                especially when they involve numerical data and dates.
+            </p>
+        </div>
+
+        <div class="ia-card">
+            <div class="ia-number">3</div>
+            <div class="ia-badge badge-success" data-pt="VERIFICAÇÃO">VERIFICATION</div>
+            <h3 data-pt="Como verificaram as informações?">How did you verify the information?</h3>
+            <p data-pt="Adotamos uma regra: toda informação factual (datas, números, nomes, eventos) precisava ser confirmada em pelo menos uma fonte externa antes de entrar no site. Consultamos o site oficial do ACNUR (unhcr.org), os relatórios da OIM (iom.int), artigos de imprensa (The Guardian, Reuters, BBC) e a Wikipedia. Sempre que a IA e a fonte primária divergiam, usávamos os dados da fonte primária.">
+                We adopted a rule: every factual piece of information (dates, numbers, names, events)
+                needed to be confirmed in at least one external source before going on the site.
+                We consulted the official UNHCR website (unhcr.org), IOM reports (iom.int),
+                press articles (The Guardian, Reuters, BBC) and Wikipedia. Whenever AI and the
+                primary source diverged, we used the primary source's data.
+            </p>
+        </div>
+
+        <div class="ia-card">
+            <div class="ia-number">4</div>
+            <div class="ia-badge badge-info" data-pt="DIFICULDADES">CHALLENGES</div>
+            <h3 data-pt="O que foi fácil e difícil no uso da IA?">What was easy and difficult about using AI?</h3>
+            <p data-pt="Foi fácil usar a IA para estruturar ideias, organizar conteúdo, escrever código, sugerir conexões entre temas e traduzir textos. O mais difícil foi conseguir dados atualizados e precisos, garantir análises literárias menos genéricas e evitar respostas rasas. A IA costuma soar confiante mesmo quando erra, o que exige atenção crítica o tempo todo.">
+                Easy: structuring ideas, organizing content, writing code, suggesting connections
+                between themes, translating texts. Difficult: obtaining up-to-date and precise data
+                (AI has a knowledge cutoff), ensuring literary analyses were accurate and not too
+                generic, and preventing responses from being excessively superficial.
+                AI tends to sound confident even when it is wrong - which requires constant critical attention.
+            </p>
+        </div>
+
+        <div class="ia-card">
+            <div class="ia-number">5</div>
+            <div class="ia-badge badge-success" data-pt="APRENDIZADO">LEARNING</div>
+            <h3 data-pt="A IA melhorou sua compreensão do tema?">Did AI improve your understanding of the topic?</h3>
+            <p data-pt="Sim, bastante. A IA ajudou a perceber conexões entre a música e o contexto histórico que talvez passassem batido, como a relação entre a estrutura repetitiva da letra e a anáfora. Ela também indicou fontes que ainda não conhecíamos. Mesmo assim, a compreensão mais profunda veio quando fomos além da IA: lemos os relatórios, assistimos ao videoclipe com atenção e discutimos o tema em grupo.">
+                Yes - significantly. AI helped us identify connections between the song and
+                historical context that we might not have seen alone, such as the relationship
+                between the repetitive structure of the lyrics and the literary technique
+                of anaphora. It also pointed us to sources we did not know. However, real
+                understanding came when we went beyond AI: we read the reports, watched the
+                music video carefully and discussed the themes as a group.
+            </p>
+        </div>
+
+        <div class="ia-card">
+            <div class="ia-number">+</div>
+            <div class="ia-badge badge-warning" data-pt="LIMITAÇÕES">LIMITATIONS</div>
+            <h3 data-pt="Limitações que Descobrimos">Limitations We Discovered</h3>
+            <p data-pt="A IA não substitui o pensamento crítico, mas pode acelerar o processo. Ela não sabe o que é verdade, só calcula o que parece mais provável com base nos dados de treino. Pode repetir vieses desses dados, não acompanha eventos muito recentes e costuma dar respostas que parecem completas mesmo quando são superficiais. Usar IA bem exige saber a hora de duvidar dela.">
+                AI does not replace critical thinking - it accelerates it. It does not know
+                what is true, only what seems likely based on its training data. It can
+                reproduce biases present in that data. It has no access to very recent events.
+                And it tends to give answers that seem complete even when they are superficial.
+                Using AI well requires knowing when to question its responses.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="quote-section">
+    <div class="quote-box">
+        <h2 data-pt="A IA é uma ferramenta poderosa, mas o pensamento crítico continua sendo nosso.">
+            AI is a powerful tool - but critical thinking remains ours.
+        </h2>
+        <p data-pt="Usamos a IA para trabalhar com mais velocidade e organização. Mesmo assim, cada informação foi conferida, cada análise foi discutida e cada decisão criativa foi nossa. A IA ajudou no processo, mas não tomou o nosso lugar.">
+            We used AI to work faster and better. But every piece of information was verified,
+            every analysis was discussed and every creative decision was made by us.
+            AI assisted our process - it did not replace it.
+        </p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <a href="#" class="footer-logo">BORDERS</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

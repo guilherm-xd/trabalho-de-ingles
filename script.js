@@ -4,6 +4,7 @@
     const themeToggle = document.getElementById('theme-toggle');
     const langToggle = document.getElementById('lang-toggle');
 
+    
     function applyTheme(theme){
         root.setAttribute('data-theme', theme);
         localStorage.setItem('borders-theme', theme);
@@ -19,21 +20,20 @@
     }
 
     function toggleTheme(){
-        const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        const current = root.getAttribute('data-theme');
         applyTheme(current === 'light' ? 'dark' : 'light');
     }
 
+    
     function applyLanguage(lang){
         document.querySelectorAll('[data-pt]').forEach(function(el){
             if(el.dataset.enText === undefined){
-                el.dataset.enText = el.textContent;
+                el.dataset.enText = el.innerHTML;
             }
-            el.textContent = lang === 'pt' ? el.getAttribute('data-pt') : el.dataset.enText;
+            el.innerHTML = lang === 'pt' ? el.getAttribute('data-pt') : el.dataset.enText;
         });
-
         root.setAttribute('lang', lang === 'pt' ? 'pt-BR' : 'en');
         localStorage.setItem('borders-lang', lang);
-
         if(langToggle){
             langToggle.textContent = lang === 'pt' ? 'EN' : 'PT';
             langToggle.setAttribute('aria-label', lang === 'pt' ? 'Switch to English' : 'Mudar para português');
@@ -50,51 +50,43 @@
         applyLanguage(current === 'pt' ? 'en' : 'pt');
     }
 
+    
+    function initActiveNav(){
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.menu a').forEach(function(link){
+            const href = link.getAttribute('href');
+            if(href === currentPage || (currentPage === '' && href === 'index.html')){
+                link.classList.add('active');
+            }
+        });
+    }
+
+    
     function initHeroCarousel(){
         const slides = document.querySelectorAll('.hero-slide');
-
-        if(!slides.length){
-            return;
-        }
-
+        if(!slides.length) return;
         const dots = document.querySelectorAll('.hero-dot');
         const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         let current = 0;
         let interval = null;
 
         function showSlide(index){
-            slides.forEach(function(slide){
-                slide.classList.remove('is-active');
-            });
-
-            dots.forEach(function(dot){
-                dot.classList.remove('is-active');
-            });
-
+            slides.forEach(s => s.classList.remove('is-active'));
+            dots.forEach(d => d.classList.remove('is-active'));
             slides[index].classList.add('is-active');
-
-            if(dots[index]){
-                dots[index].classList.add('is-active');
-            }
-
+            if(dots[index]) dots[index].classList.add('is-active');
             current = index;
         }
 
-        function nextSlide(){
-            showSlide((current + 1) % slides.length);
-        }
+        function nextSlide(){ showSlide((current + 1) % slides.length); }
 
         function startAutoplay(){
-            if(prefersReducedMotion){
-                return;
-            }
+            if(prefersReducedMotion) return;
             interval = setInterval(nextSlide, 6000);
         }
 
         function resetAutoplay(){
-            if(interval){
-                clearInterval(interval);
-            }
+            if(interval) clearInterval(interval);
             startAutoplay();
         }
 
@@ -109,9 +101,10 @@
         startAutoplay();
     }
 
+    
     function initReveal(){
-        const itemSelectors = '.intro-grid > .card, .page-grid > .page-card, .analysis-grid > .analysis-box, .stats-section > .stat-box';
-        const blockSelectors = '.content-card, .quote-box, .conclusion-card, .highlight-image, .highlight-text, .section-title';
+        const itemSelectors = '.intro-grid > .card, .page-grid > .page-card, .analysis-grid > .analysis-box, .stats-section > .stat-box, .news-grid > .news-card, .ia-grid > .ia-card, .lyric-theme-grid > .lyric-theme-card';
+        const blockSelectors = '.content-card, .quote-box, .conclusion-card, .highlight-image, .highlight-text, .section-title, .video-wrapper, .central-quote, .stat-banner, .prompt-box, .timeline-step';
 
         document.querySelectorAll(itemSelectors).forEach(function(el, index){
             el.classList.add('reveal');
@@ -129,23 +122,18 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+        }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.reveal').forEach(function(el){
-            observer.observe(el);
-        });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     }
 
-    if(themeToggle){
-        themeToggle.addEventListener('click', toggleTheme);
-    }
-
-    if(langToggle){
-        langToggle.addEventListener('click', toggleLanguage);
-    }
+    
+    if(themeToggle) themeToggle.addEventListener('click', toggleTheme);
+    if(langToggle) langToggle.addEventListener('click', toggleLanguage);
 
     initTheme();
     initLanguage();
+    initActiveNav();
     initHeroCarousel();
     initReveal();
 
