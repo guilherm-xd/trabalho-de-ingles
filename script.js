@@ -2,6 +2,8 @@
     const root = document.documentElement;
     const themeToggle = document.getElementById('theme-toggle');
     const langToggle = document.getElementById('lang-toggle');
+    const hamburger = document.getElementById('hamburger-toggle');
+    const menu = document.querySelector('.menu');
 
     function applyTheme(theme){
         root.setAttribute('data-theme', theme);
@@ -55,6 +57,22 @@
                 link.classList.add('active');
             }
         });
+    }
+
+    function toggleMenu(){
+        if(hamburger && menu){
+            hamburger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+            hamburger.setAttribute('aria-expanded', hamburger.classList.contains('is-active') ? 'true' : 'false');
+        }
+    }
+
+    function closeMenu(){
+        if(hamburger && menu){
+            hamburger.classList.remove('is-active');
+            menu.classList.remove('is-active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
     }
 
     function initHeroCarousel(){
@@ -123,6 +141,21 @@
 
     if(themeToggle) themeToggle.addEventListener('click', toggleTheme);
     if(langToggle) langToggle.addEventListener('click', toggleLanguage);
+    if(hamburger) hamburger.addEventListener('click', toggleMenu);
+
+    // Close menu when a menu link is clicked
+    if(menu){
+        menu.querySelectorAll('a').forEach(function(link){
+            link.addEventListener('click', closeMenu);
+        });
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e){
+        if(menu && hamburger && !menu.contains(e.target) && !hamburger.contains(e.target)){
+            closeMenu();
+        }
+    });
 
     initTheme();
     initLanguage();
