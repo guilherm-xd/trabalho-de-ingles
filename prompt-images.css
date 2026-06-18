@@ -1,0 +1,62 @@
+.prompt-photo-frame{
+  position:relative;
+  padding:0 !important;
+  overflow:hidden;
+  display:block !important;
+  aspect-ratio:1 / 1;
+  width:100%;
+  border:2px solid rgba(78,205,196,0.25);
+  border-radius:16px;
+  background:rgba(78,205,196,0.04);
+}
+
+.prompt-photo-link{
+  display:block;
+  width:100%;
+  height:100%;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.prompt-photo-frame .prompt-photo{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center;
+  display:block;
+  transform:scale(1);
+  transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+
+:root[data-theme="light"] .prompt-photo-frame{
+  border-color:rgba(15,155,146,0.25);
+  background:rgba(15,155,146,0.04);
+}
+
+/* Hover zoom (so text becomes readable) */
+.prompt-photo-frame:hover,
+.prompt-photo-frame:focus-within{
+  overflow:visible;
+  z-index:50;
+}
+
+.prompt-photo-frame:hover .prompt-photo-link,
+.prompt-photo-frame:focus-within .prompt-photo-link{
+  overflow:visible;
+}
+
+.prompt-photo-frame:hover .prompt-photo,
+.prompt-photo-frame:focus-within .prompt-photo{
+  transform:scale(2.6);
+  background:rgba(0,0,0,0.9);
+  box-shadow:0 30px 70px rgba(0,0,0,0.55);
+  border-radius:12px;
+}
+
+@media (hover: none){
+  .prompt-photo-frame:hover .prompt-photo,
+  .prompt-photo-frame:focus-within .prompt-photo{
+    transform:scale(1);
+    box-shadow:none;
+  }
+}

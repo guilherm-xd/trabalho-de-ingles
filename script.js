@@ -1,10 +1,8 @@
 (function(){
-
     const root = document.documentElement;
     const themeToggle = document.getElementById('theme-toggle');
     const langToggle = document.getElementById('lang-toggle');
 
-    
     function applyTheme(theme){
         root.setAttribute('data-theme', theme);
         localStorage.setItem('borders-theme', theme);
@@ -24,7 +22,6 @@
         applyTheme(current === 'light' ? 'dark' : 'light');
     }
 
-    
     function applyLanguage(lang){
         document.querySelectorAll('[data-pt]').forEach(function(el){
             if(el.dataset.enText === undefined){
@@ -50,7 +47,6 @@
         applyLanguage(current === 'pt' ? 'en' : 'pt');
     }
 
-    
     function initActiveNav(){
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         document.querySelectorAll('.menu a').forEach(function(link){
@@ -61,7 +57,6 @@
         });
     }
 
-    
     function initHeroCarousel(){
         const slides = document.querySelectorAll('.hero-slide');
         if(!slides.length) return;
@@ -101,9 +96,8 @@
         startAutoplay();
     }
 
-    
-    function initReveal(){
-        const itemSelectors = '.intro-grid > .card, .page-grid > .page-card, .analysis-grid > .analysis-box, .stats-section > .stat-box, .news-grid > .news-card, .ia-grid > .ia-card, .lyric-theme-grid > .lyric-theme-card';
+        function initReveal(){
+            const itemSelectors = '.intro-grid > .card, .page-grid > .page-card, .analysis-grid > .analysis-box, .stats-section > .stat-box, .news-grid > .news-card, .ia-grid > .ia-card, .lyric-theme-grid > .lyric-theme-card, .flow-list > li';
         const blockSelectors = '.content-card, .quote-box, .conclusion-card, .highlight-image, .highlight-text, .section-title, .video-wrapper, .central-quote, .stat-banner, .prompt-box, .timeline-step';
 
         document.querySelectorAll(itemSelectors).forEach(function(el, index){
@@ -127,7 +121,6 @@
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     }
 
-    
     if(themeToggle) themeToggle.addEventListener('click', toggleTheme);
     if(langToggle) langToggle.addEventListener('click', toggleLanguage);
 
@@ -136,5 +129,4 @@
     initActiveNav();
     initHeroCarousel();
     initReveal();
-
 })();

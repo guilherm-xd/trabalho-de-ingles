@@ -1,296 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-pt="Notícias | Borders">News | Borders</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-hero" style="background: linear-gradient(rgba(7,17,31,.72),rgba(7,17,31,.9)), url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=80'); background-size:cover; background-position:center; background-repeat:no-repeat;">
 
-<header
-    class="page-hero"
-    style="
-        background:
-        linear-gradient(rgba(7,17,31,.72),rgba(7,17,31,.9)),
-        url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=80');
-        background-size:cover;
-        background-position:center;
-        background-repeat:no-repeat;
-    "
->
-    <nav class="navbar">
-        <div class="logo">BORDERS</div>
-        <ul class="menu">
-            <li><a href="index.html" data-pt="Início">Home</a></li>
-            <li><a href="artista.html" data-pt="Artista">Artist</a></li>
-            <li><a href="letra.html" data-pt="Letra">Lyrics</a></li>
-            <li><a href="contexto.html" data-pt="Contexto">Context</a></li>
-            <li><a href="noticias.html" data-pt="Notícias">News</a></li>
-            <li><a href="ia.html">AI</a></li>
-        </ul>
-        <div class="nav-actions">
-            <button class="nav-btn" id="theme-toggle" aria-label="Switch to light mode">
-                <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
-                <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path></svg>
-            </button>
-            <button class="nav-btn lang-btn" id="lang-toggle" aria-label="Mudar para português">PT</button>
-        </div>
-    </nav>
+<nav class="navbar">
+  <div class="logo">BORDERS</div>
+  <ul class="menu">
+    <li><a href="index.html" data-pt="Início">Home</a></li>
+    <li><a href="artista.html" data-pt="Artista">Artist</a></li>
+    <li><a href="letra.html" data-pt="Letra">Lyrics</a></li>
+    <li><a href="contexto.html" data-pt="Contexto">Context</a></li>
+    <li><a href="noticias.html" data-pt="Notícias">News</a></li>
+    <li><a href="ia.html" data-pt="IA">AI</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="nav-btn" id="theme-toggle" aria-label="Switch to light mode">
+      <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+      </svg>
+      <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"></path>
+      </svg>
+    </button>
+    <button class="nav-btn lang-btn" id="lang-toggle" aria-label="Mudar para português">PT</button>
+  </div>
+</nav>
 
-    <div class="page-title">
-        <span data-pt="ATUALIDADES">CURRENT EVENTS</span>
-        <h1 data-pt="Borders Ainda É Hoje">Borders Is Still Today</h1>
-        <p data-pt="As perguntas de M.I.A. não ficaram no passado. Veja como os temas da música continuam nas manchetes de 2024 e 2025, com dados reais de fontes internacionais.">
-            M.I.A.'s questions did not stay in the past. See how the song's themes
-            continue in the headlines of 2024 and 2025 - with real data from
-            international sources.
-        </p>
-    </div>
-</header>
-
-<main>
+      <div class="page-title">
+        <span data-pt="NOTÍCIAS">NEWS</span>
+        <h1 data-pt="Notícias">News</h1>
+        <p data-pt="Uma página de atualidades mais limpa, com conexões curtas entre a música e as manchetes recentes.">A cleaner current-events page with short links between the song and recent headlines.</p>
+      </div>
+    </header>
+    <main>
 
 <section class="news-section">
-    <div class="section-title">
-        <span data-pt="DADOS ATUAIS, ACNUR 2025">CURRENT DATA - UNHCR 2025</span>
-        <h2 data-pt="O Deslocamento Forçado Hoje">Forced Displacement Today</h2>
+  <div class="section-title">
+    <span data-pt="ATUALIDADES">CURRENT EVENTS</span>
+    <h2 data-pt="Borders e o mundo de hoje">Borders and the world today</h2>
+  </div>
+  <p class="key-line" data-pt="Cinco exemplos recentes mostram que a música continua falando do presente.">Five recent examples show that the song is still speaking about the present.</p>
+
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-card-top">
+        <span class="news-tag tag-crisis" data-pt="CRISE HUMANITÁRIA">HUMANITARIAN CRISIS</span>
+        <div class="news-date" data-pt="2024–2025 · Mediterrâneo">2024–2025 · Mediterranean</div>
+        <h3 data-pt="Mortes continuam no Mediterrâneo">Deaths continue in the Mediterranean</h3>
+      </div>
+      <div class="news-card-body">
+        <p data-pt="A travessia segue entre as rotas mais letais para quem busca segurança.">The crossing remains one of the deadliest routes for people seeking safety.</p>
+        <div class="news-connection">
+          <div class="conn-label" data-pt="CONEXÃO">CONNECTION</div>
+          <p data-pt="Os barcos da música continuam existindo fora da tela.">The boats in the song still exist outside the screen.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="stat-banner">
-        <div class="stat-item">
-            <div class="stat-number">41.6M</div>
-            <div class="stat-label" data-pt="refugiados no mundo (fim de 2025)">refugees in the world (end of 2025)</div>
+    <div class="news-card">
+      <div class="news-card-top">
+        <span class="news-tag tag-crisis" data-pt="DESLOCAMENTO">DISPLACEMENT</span>
+        <div class="news-date" data-pt="2024–2025 · Sudão">2024–2025 · Sudan</div>
+        <h3 data-pt="O Sudão vive uma crise gigantesca">Sudan is facing a massive crisis</h3>
+      </div>
+      <div class="news-card-body">
+        <p data-pt="Milhões de pessoas estão fora de casa por causa da guerra.">Millions of people are out of their homes because of war.</p>
+        <div class="news-connection">
+          <div class="conn-label" data-pt="CONEXÃO">CONNECTION</div>
+          <p data-pt="Borders lembra que fugir não significa ser protegido.">Borders reminds us that fleeing does not guarantee protection.</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-number">117.8M</div>
-            <div class="stat-label" data-pt="pessoas forçosamente deslocadas no total">people forcibly displaced in total</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">2,300+</div>
-            <div class="stat-label" data-pt="mortes no Mar Mediterrâneo apenas em 2024 (OIM)">deaths in the Mediterranean Sea in 2024 alone (IOM)</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">1 em 70</div>
-            <div class="stat-label" data-pt="pessoas no planeta é um deslocado forçado">people on the planet is a forcibly displaced person</div>
-        </div>
+      </div>
     </div>
 
-    
-    <div class="news-grid">
-
-        
-        <div class="news-card">
-            <div class="news-card-top">
-                <span class="news-tag tag-data" data-pt="RELATÓRIO GLOBAL">GLOBAL REPORT</span>
-                <div class="news-date">June 2026 · UNHCR Global Trends Report</div>
-                <h3 data-pt="Deslocamento global cai pela primeira vez em uma década, mas ainda afeta 117 milhões">
-                    Global displacement falls for the first time in a decade - but still affects 117 million
-                </h3>
-            </div>
-            <div class="news-card-body">
-                <p data-pt="O relatório anual do ACNUR, publicado em junho de 2026, mostrou que o número total de pessoas forçadas a se deslocar caiu 4% em 2025, chegando a 117,8 milhões. Foi a primeira queda registrada em uma década. Mesmo assim, 41,6 milhões ainda tinham status de refugiado, número que o Alto Comissário da ONU chamou de &quot;inaceitavelmente alto&quot;. Mais de 70% seguem em exílio prolongado, muitos vivendo abaixo da linha da pobreza.">
-                    The annual UNHCR report, published in June 2026, revealed that the total
-                    number of forcibly displaced people fell 4% in 2025, reaching 117.8 million.
-                    It was the first recorded decrease in a decade. However, 41.6 million still
-                    held refugee status - a number the UN High Commissioner called "unacceptably high."
-                    Over 70% of refugees remain in prolonged exile, many living below the poverty line.
-                </p>
-                <div class="news-connection">
-                    <div class="conn-label" data-pt="CONEXÃO COM BORDERS">CONNECTION TO BORDERS</div>
-                    <p data-pt="M.I.A. perguntou em 2015: &quot;o que há de errado com isso?&quot; Em 2026, a pergunta continua sem resposta satisfatória: 117 milhões de razões para ainda questionar.">
-                        M.I.A. asked in 2015: "what's up with that?" In 2026, the question
-                        still has no satisfactory answer: 117 million reasons to keep questioning.
-                    </p>
-                </div>
-            </div>
+    <div class="news-card">
+      <div class="news-card-top">
+        <span class="news-tag tag-policy" data-pt="POLÍTICA">POLICY</span>
+        <div class="news-date" data-pt="2025 · Afeganistão">2025 · Afghanistan</div>
+        <h3 data-pt="Afegãos retornam sob pressão">Afghans return under pressure</h3>
+      </div>
+      <div class="news-card-body">
+        <p data-pt="Políticas mais duras forçaram muitas famílias a voltar sem escolha real.">Tougher policies pushed many families back without a real choice.</p>
+        <div class="news-connection">
+          <div class="conn-label" data-pt="CONEXÃO">CONNECTION</div>
+          <p data-pt="Documentos e fronteiras continuam definindo destinos.">Documents and borders still define people's futures.</p>
         </div>
-
-        
-        <div class="news-card">
-            <div class="news-card-top">
-                <span class="news-tag tag-crisis" data-pt="CRISE HUMANITÁRIA">HUMANITARIAN CRISIS</span>
-                <div class="news-date" data-pt="2024–2025 · Mar Mediterrâneo">2024–2025 · Mediterranean Sea</div>
-                <h3 data-pt="Mais de 2.300 mortes no Mediterrâneo em 2024: a rota mais perigosa do mundo continua ativa">
-                    Over 2,300 deaths in the Mediterranean in 2024: the world's most dangerous route remains active
-                </h3>
-            </div>
-            <div class="news-card-body">
-                <p data-pt="Segundo a Organização Internacional para as Migrações, mais de 2.300 pessoas morreram ou desapareceram tentando cruzar o Mar Mediterrâneo em 2024, um aumento de 18% em relação a 2023. Cerca de 208 mil pessoas chegaram de forma irregular à Europa por essa rota naquele ano. Em 2025, já haviam sido registradas 1.745 mortes. A rota central, do Norte da África para a Itália, foi a mais letal, com 1 morte a cada 120 tentativas de travessia.">
-                    According to the International Organization for Migration (IOM),
-                    over 2,300 people died or disappeared trying to cross the Mediterranean Sea
-                    in 2024 - an 18% increase from 2023. Around 208,000 people arrived
-                    irregularly in Europe via the Mediterranean that year. In 2025,
-                    1,745 deaths have already been recorded. The central route, from North Africa
-                    to Italy, was the deadliest, with 1 in every 120 people who attempted
-                    the crossing dying in the process.
-                </p>
-                <div class="news-connection">
-                    <div class="conn-label" data-pt="CONEXÃO COM BORDERS">CONNECTION TO BORDERS</div>
-                    <p data-pt="Os coletes salva-vidas e barcos superlotados da letra de M.I.A. não são metáforas: são a realidade documentada de 2.300 pessoas que morreram tentando alcançar segurança.">
-                        The life vests and overcrowded boats in M.I.A.'s lyrics are not metaphors:
-                        they are the documented reality of 2,300 people who died trying to reach safety.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="news-card">
-            <div class="news-card-top">
-                <span class="news-tag tag-crisis" data-pt="MAIOR CRISE DO MUNDO">WORLD'S LARGEST CRISIS</span>
-                <div class="news-date" data-pt="2024–2025 · Sudão">2024–2025 · Sudan</div>
-                <h3 data-pt="Sudão: a maior crise de deslocamento interno do planeta, com 9,1 milhões de pessoas">
-                    Sudan: the planet's largest internal displacement crisis, with 9.1 million people
-                </h3>
-            </div>
-            <div class="news-card-body">
-                <p data-pt="O conflito iniciado no Sudão em abril de 2023 gerou a maior crise de deslocamento interno do mundo. Ao fim de 2025, 9,1 milhões de sudaneses estavam deslocados dentro do próprio país, e outros 2,8 milhões se tornaram refugiados em países vizinhos. O conflito, que entrou no quarto ano em 2025, destruiu infraestrutura básica e deixou milhões sem acesso a serviços essenciais, moradia ou meios de subsistência.">
-                    The conflict that began in Sudan in April 2023 generated the world's largest
-                    internal displacement crisis. By the end of 2025, 9.1 million Sudanese were
-                    displaced within the country, and another 2.8 million became refugees
-                    in neighboring countries. The conflict, which entered its fourth year in 2025,
-                    destroyed basic infrastructure and left millions without access to essential
-                    services, housing or livelihoods.
-                </p>
-                <div class="news-connection">
-                    <div class="conn-label" data-pt="CONEXÃO COM BORDERS">CONNECTION TO BORDERS</div>
-                    <p data-pt="O Sudão mostra que as fronteiras nem sempre protegem as pessoas, muitas vezes elas as prendem. Hoje, 9,1 milhões precisam cruzar fronteiras para sobreviver, mas muitas vezes não conseguem.">
-                        Sudan shows that borders do not protect people - they trap them.
-                        9.1 million need to cross borders to survive, but often cannot.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="news-card">
-            <div class="news-card-top">
-                <span class="news-tag tag-policy" data-pt="POLÍTICA DE IMIGRAÇÃO">IMMIGRATION POLICY</span>
-                <div class="news-date" data-pt="2025 · Irã e Paquistão">2025 · Iran and Pakistan</div>
-                <h3 data-pt="2,9 milhões de afegãos retornam sob pressão: quando &quot;voltar para casa&quot; não é uma escolha livre">
-                    2.9 million Afghans return under pressure: when "going home" is not a free choice
-                </h3>
-            </div>
-            <div class="news-card-body">
-                <p data-pt="Em 2025, Irã e Paquistão endureceram muito suas políticas em relação a refugiados afegãos, o que levou ao retorno de 2,9 milhões de afegãos, incluindo 1,9 milhão de refugiados reconhecidos. O número foi cinco vezes maior que no ano anterior. Segundo o ACNUR, muitos desses retornos não foram voluntários: os afegãos disseram que simplesmente não tinham outra opção. Muitos voltaram para um país em colapso econômico e marcado por décadas de conflito.">
-                    In 2025, Iran and Pakistan drastically tightened their policies toward
-                    Afghan refugees - leading to the return of 2.9 million Afghans,
-                    including 1.9 million recognized refugees. The number was five times
-                    higher than the previous year. According to UNHCR, many of these returns
-                    were not voluntary: the Afghans reported they simply had no other option.
-                    Many returned to a country in economic collapse, devastated by decades of conflict.
-                </p>
-                <div class="news-connection">
-                    <div class="conn-label" data-pt="CONEXÃO COM BORDERS">CONNECTION TO BORDERS</div>
-                    <p data-pt="M.I.A. questiona passaportes e papéis, os mesmos documentos que determinaram que 2,9 milhões de afegãos não tinham o direito de permanecer onde estavam.">
-                        M.I.A. questions passports and papers - the very documents that
-                        determined that 2.9 million Afghans had no right to remain where they were.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="news-card">
-            <div class="news-card-top">
-                <span class="news-tag tag-rights" data-pt="DIREITOS HUMANOS">HUMAN RIGHTS</span>
-                <div class="news-date" data-pt="2024–2025 · Europa">2024–2025 · Europe</div>
-                <h3 data-pt="Centros de deportação offshore e pushbacks: a Europa debate os limites dos direitos humanos">
-                    Offshore deportation centers and pushbacks: Europe debates the limits of human rights
-                </h3>
-            </div>
-            <div class="news-card-body">
-                <p data-pt="Em 2024 e 2025, vários países europeus passaram a discutir a criação de centros de deportação offshore, espaços fora do território da UE para processar pedidos de asilo e tentar reduzir a chegada de migrantes. Organizações de direitos humanos criticaram a medida por enxergarem nela uma forma de driblar proteções legais básicas. Ao mesmo tempo, também foram registrados casos de pushbacks, quando migrantes são devolvidos à força antes mesmo de terem seus pedidos de asilo analisados, em desrespeito ao direito internacional.">
-                    In 2024 and 2025, several European countries began debating the creation
-                    of offshore deportation centers - facilities outside EU territory where
-                    asylum seekers would be processed, aiming to reduce migrant arrivals.
-                    Human rights organizations strongly criticized the measure, pointing out
-                    that it could circumvent fundamental legal protections. At the same time,
-                    cases of pushbacks - forced return of migrants before any analysis of
-                    their asylum claims - were documented in violation of international law.
-                </p>
-                <div class="news-connection">
-                    <div class="conn-label" data-pt="CONEXÃO COM BORDERS">CONNECTION TO BORDERS</div>
-                    <p data-pt="Borders questiona as fronteiras como estruturas de poder. O debate europeu mostra que esse poder ainda decide, literalmente, quem tem direito a ser ouvido.">
-                        Borders questions borders as power structures. The European debate shows
-                        that this power still decides - literally - who has the right to be heard.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="news-card">
-            <div class="news-card-top">
-                <span class="news-tag tag-climate" data-pt="CLIMA">CLIMATE</span>
-                <div class="news-date" data-pt="2024–2025 · Global">2024–2025 · Global</div>
-                <h3 data-pt="Migração climática: a próxima fronteira, quando o planeta expulsa pessoas de suas casas">
-                    Climate migration: the next frontier - when the planet forces people from their homes
-                </h3>
-            </div>
-            <div class="news-card-body">
-                <p data-pt="Ao lado dos conflitos armados, as mudanças climáticas se tornaram uma das maiores causas de deslocamento forçado. Eventos extremos, como secas, inundações, furacões e a elevação do nível do mar, já obrigaram milhões de pessoas a deixar suas casas em regiões como Bangladesh, o Sahel africano, ilhas do Pacífico e partes da América Central. Projeções da ONU indicam que, sem ação climática urgente, até 216 milhões de pessoas poderão se tornar migrantes climáticos internos até 2050.">
-                    Alongside armed conflicts, climate change has become one of the leading causes
-                    of forced displacement. Extreme climate events - droughts, floods, hurricanes
-                    and rising sea levels - have already forced millions of people to abandon their
-                    homes in regions such as Bangladesh, the African Sahel, Pacific islands and
-                    parts of Central America. UN projections indicate that, without urgent climate
-                    action, up to 216 million people could become internal climate migrants by 2050.
-                </p>
-                <div class="news-connection">
-                    <div class="conn-label" data-pt="CONEXÃO COM BORDERS">CONNECTION TO BORDERS</div>
-                    <p data-pt="M.I.A. perguntou quem decide onde as pessoas podem viver. Com a crise climática, a resposta pode ser o próprio planeta, e as fronteiras não resolvem isso.">
-                        M.I.A. asked who decides where people can live. With the climate crisis,
-                        the answer may be: the planet itself - and borders do not change that.
-                    </p>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
+
+    <div class="news-card">
+      <div class="news-card-top">
+        <span class="news-tag tag-rights" data-pt="DIREITOS">RIGHTS</span>
+        <div class="news-date" data-pt="2024–2025 · Europa">2024–2025 · Europe</div>
+        <h3 data-pt="Direitos humanos seguem em disputa">Human rights remain under debate</h3>
+      </div>
+      <div class="news-card-body">
+        <p data-pt="A discussão sobre deportação e pushbacks mostra limites da proteção atual.">Debates about deportation and pushbacks show the limits of current protection.</p>
+        <div class="news-connection">
+          <div class="conn-label" data-pt="CONEXÃO">CONNECTION</div>
+          <p data-pt="A música pergunta quem pode entrar e quem sequer é ouvido.">The song asks who can enter and who is even heard.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="news-card-top">
+        <span class="news-tag tag-climate" data-pt="CLIMA">CLIMATE</span>
+        <div class="news-date" data-pt="2024–2025 · Global">2024–2025 · Global</div>
+        <h3 data-pt="Clima também força deslocamento">Climate also forces displacement</h3>
+      </div>
+      <div class="news-card-body">
+        <p data-pt="Secas, enchentes e tempestades já empurram famílias para fora de casa.">Droughts, floods and storms are already pushing families out of their homes.</p>
+        <div class="news-connection">
+          <div class="conn-label" data-pt="CONEXÃO">CONNECTION</div>
+          <p data-pt="Hoje, a pergunta de M.I.A. também vale para a crise climática.">Today, M.I.A.'s question also applies to the climate crisis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="quote-section">
-    <div class="quote-box">
-        <h2 data-pt="As perguntas de M.I.A. em 2015 são as mesmas que os jornais publicam hoje.">
-            M.I.A.'s questions from 2015 are the same ones newspapers publish today.
-        </h2>
-        <p data-pt="Borders não envelheceu porque o problema que ela denuncia também não envelheceu. A música permanece atual porque a desigualdade que a inspira permanece atual.">
-            Borders has not aged because the problem it denounces has not aged either.
-            The song remains relevant because the inequality that inspires it remains relevant.
-        </p>
-    </div>
+  <div class="quote-box">
+    <h2 data-pt="As perguntas de 2015 ainda aparecem nas manchetes de 2025.">The questions from 2015 still appear in 2025 headlines.</h2>
+    <p data-pt="Isso é o que mantém Borders atual.">That is what keeps Borders current.</p>
+  </div>
 </section>
 
 <section class="content-section">
-    <div class="section-title">
-        <span data-pt="FONTES">SOURCES</span>
-        <h2 data-pt="De Onde Vêm Esses Dados">Where This Data Comes From</h2>
-    </div>
-    <div class="content-card">
-        <p data-pt="Todos os dados desta página foram retirados de relatórios oficiais de organizações internacionais reconhecidas. Verificamos as informações em múltiplas fontes para garantir precisão.">
-            All data on this page was taken from official reports by recognized
-            international organizations. We verified the information across
-            multiple sources to ensure accuracy.
-        </p>
-        <p>
-            <strong>UNHCR (United Nations High Commissioner for Refugees)</strong>
-            - Global Trends 2025 &amp; Mid-Year Trends 2025<br>
-            <strong>IOM (International Organization for Migration)</strong>
-            - Missing Migrants Project 2024/2025<br>
-            <strong>World Bank</strong> - Climate Migration projections<br>
-            <strong>UNICEF</strong> - Mediterranean child migration data 2024
-        </p>
-    </div>
+  <div class="section-title">
+    <span data-pt="FONTES">SOURCES</span>
+    <h2 data-pt="Base da pesquisa">Research base</h2>
+  </div>
+  <div class="content-card">
+    <ul class="talk-points">
+      <li>UNHCR</li>
+      <li>IOM</li>
+      <li>World Bank</li>
+      <li>UNICEF</li>
+    </ul>
+  </div>
 </section>
 
-</main>
+    </main>
 
 <footer>
-    <a href="#" class="footer-logo">BORDERS</a>
+  <a href="#" class="footer-logo">BORDERS</a>
 </footer>
-
 <script src="script.js"></script>
-</body>
+
+  </body>
 </html>
